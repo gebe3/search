@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+  <div class="container">
+    <table>
+      <tr>
+        <td>
+          <table>
+            <tr>
+              <td><span class="disc">検索キーワードを入力して、検索ボタンを押してください。</span></td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" name="searchKey" placeholder="検索キーワードを入力してください" id="searchKey" class="searchkey" size="35" maxlength="50">
+                <input type="button" value="検索" id="clickSearchButton"/>
+                <input type="button" value="クリア" id="clickClearButton"/>
+                <div id="showResult" class="showcnt"></div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr id="result">
+        <td>
+          <table class="tile">
+            <tr id="result-inner"></tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <table>
+            <tr>
+              <td class="subheading">
+                <span class="subheading-title">対象一覧</span>
+                <span class="subheading-list">[<a href="#row_a">あ</a>]</span>
+                <span class="subheading-list">[<a href="#row_k">か</a>]</span>
+                <span class="subheading-list">[<a href="#row_s">さ</a>]</span>
+                <span class="subheading-list">[<a href="#row_t">た</a>]</span>
+                <span class="subheading-list">[<a href="#row_n">な</a>]</span>
+                <span class="subheading-list">[<a href="#row_h">は</a>]</span>
+                <span class="subheading-list">[<a href="#row_m">ま</a>]</span>
+                <span class="subheading-list">[<a href="#row_y">や・ら・わ</a>]</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table class="tile">
+                  <tr id="row_a">
+                    <td class="subheading">[あ]</td>
+                  </tr>
+                  <tr id="row_k">
+                    <td class="subheading">[か]</td>
+                  </tr>
+                  <tr id="row_s">
+                    <td class="subheading">[さ]</td>
+                  </tr>
+                  <tr id="row_t">
+                    <td class="subheading">[た]</td>
+                  </tr>
+                  <tr id="row_n">
+                    <td class="subheading">[な]</td>
+                  </tr>
+                  <tr id="row_h">
+                    <td class="subheading">[は]</td>
+                  </tr>
+                  <tr id="row_m">
+                    <td class="subheading">[ま]</td>
+                  </tr>
+                  <tr id="row_y">
+                    <td class="subheading">[や・ら・わ]</td>
+                  </tr>
+                  <tr id="row_o">
+                    <td class="subheading">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <div id="pageTop" class="pagetop"><a href="#">&#8743;</a></div>
+
+  </div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="data/data_list.js"></script>
+<script src="data/search_word.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+</html>
